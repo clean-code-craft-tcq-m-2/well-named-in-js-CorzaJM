@@ -31,6 +31,8 @@ import * as colorCodeManual from './colorCodeManual.js';
         console.log(`[In]Colors: ${testPair2}, [Out] PairNumber: ${pairNumber}`);
         console.assert(pairNumber==6);
 
-        colorCodeManual.printReferenceManual();
+        let manual = colorCodeManual.printReferenceManual();        
+        console.log(manual);
+        console.assert(manual != '');
 }
 test();
