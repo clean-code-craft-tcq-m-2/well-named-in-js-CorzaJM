@@ -1,5 +1,6 @@
 import * as colorCodes from './colorCodes.js';
 import * as ColorPair from './colorPairs.js';
+import * as colorCodeManual from './colorCodeManual.js';
 	 
     function test(){
         let pairNumber = 4;
@@ -30,6 +31,6 @@ import * as ColorPair from './colorPairs.js';
         console.log(`[In]Colors: ${testPair2}, [Out] PairNumber: ${pairNumber}`);
         console.assert(pairNumber==6);
 
-        colorCodes.printReferenceManual();
+        colorCodeManual.printReferenceManual();
 }
 test();
