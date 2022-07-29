@@ -1,5 +1,5 @@
 import * as colorCodes from './colorCodes.js';
-import * as ColorPair from './colorPairs.js';
+import * as colorPair from './colorPairs.js';
 import * as colorCodeManual from './colorCodeManual.js';
 	 
     function test(){
@@ -21,12 +21,12 @@ import * as colorCodeManual from './colorCodeManual.js';
         console.assert(testPair1.majorColor == "RED");
         console.assert(testPair1.minorColor == "GREEN");
             
-        let testPair2 = new ColorPair.ColorPair("YELLOW", "GREEN");
+        let testPair2 = new colorPair.ColorPair("YELLOW", "GREEN");
         pairNumber = colorCodes.getPairNumberFromColor(testPair2);
         console.log(`[In]Colors: ${testPair2}, [Out] PairNumber: ${pairNumber}`);
         console.assert(pairNumber==18);
 
-        testPair2 = new ColorPair.ColorPair("RED", "BLUE");
+        testPair2 = new colorPair.ColorPair("RED", "BLUE");
         pairNumber = colorCodes.getPairNumberFromColor(testPair2);
         console.log(`[In]Colors: ${testPair2}, [Out] PairNumber: ${pairNumber}`);
         console.assert(pairNumber==6);
